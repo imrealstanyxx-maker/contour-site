@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контур — Архив</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="logo">КОНТУР</div>
+      <div class="sub">Публичный архив аномалий (неофициальная компиляция)</div>
+    </div>
+
+    <div class="controls">
+      <input id="q" class="input" placeholder="Поиск по названию, месту, тегам..." autocomplete="off" />
+      <select id="type" class="select">
+        <option value="all">Все типы</option>
+        <option value="КЕ">КЕ</option>
+        <option value="КЕ-С">КЕ-С</option>
+        <option value="КЕ-Ф">КЕ-Ф</option>
+        <option value="КЕ-М">КЕ-М</option>
+      </select>
+      <select id="access" class="select">
+        <option value="public">Доступ: Публичный</option>
+        <option value="leak">Доступ: Утечка</option>
+        <option value="internal">Доступ: Внутренний (заблокировано)</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panel-title">Сводка</div>
+      <div class="panel-body">
+        <div id="stats" class="stats"></div>
+        <div class="note">
+          Этот архив собран из разрозненных материалов. Некоторые записи повреждены или намеренно искажены.
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">Досье</div>
+      <div class="panel-body">
+        <div id="list" class="grid"></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>© Неизвестный составитель. Версия: 0.1</div>
+      <div class="tiny">Если вы нашли несостыковки — возможно, это и есть подсказка.</div>
+    </footer>
+  </main>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
